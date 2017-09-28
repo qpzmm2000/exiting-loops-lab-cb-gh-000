@@ -2,7 +2,7 @@ function breakOut(array, changeValue, stopValue)
 {
   for(var i = 0; i < array.length; i++)
   {
-    if(changeValue == stopValue) break;
+    if(changeValue >= stopValue) break;
     array[i] = changeValue;
 
   }
