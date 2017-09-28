@@ -2,9 +2,8 @@ function breakOut(array, changeValue, stopValue)
 {
   for(var i = 0; i < array.length; i++)
   {
-    if(changeValue >= stopValue) break;
-    array[i] = changeValue;
-
+    if(changeValue == stopValue) break;
+    else{array[i] = changeValue;}
   }
   return array;
 }
@@ -13,7 +12,7 @@ function keepGoing(array, changeValue, skipValue)
 {
   for(var i = 0; i < array.length; i++)
   {
-    if(changeValue == stopValue) continue;
+    if(changeValue == skipValue) continue;
     array[i] = changeValue;
   }
   return array;
